@@ -13,7 +13,7 @@ export class SearchbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  maps = JSON.parse(window.localStorage.getItem('urlMap'));
+  maps = JSON.parse(window.localStorage.getItem('startpage'))['searchbar'];
 
   onSubmit() {
     let searchVal: string = this.searchFormControl.value;

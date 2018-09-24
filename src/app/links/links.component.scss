@@ -1,0 +1,17 @@
+table {
+  width      : 80%;
+  margin-left: 10%;
+
+  .category {
+    width: 6em;
+  }
+
+  .category::before {
+    content: "#$";
+  }
+
+  span {
+    padding: 5px;
+    display: inline-block;
+  }
+}
