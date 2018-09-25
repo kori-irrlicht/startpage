@@ -158,7 +158,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table mat-table\n    [dataSource]=\"dataSource\"\n    class=\"mat-elevation-z8\">\n\n  <ng-container matColumnDef=\"category\">\n    <td mat-cell\n        *matCellDef=\"let element\"\n        [style.color]=\"element.color\"\n        class=\"category\"> {{element.category}}</td>\n  </ng-container>\n  <ng-container matColumnDef=\"splitter\">\n    <td mat-cell\n        *matCellDef=\"let element\"\n        [style.color]=\"element.color\">::</td>\n  </ng-container>\n  <ng-container matColumnDef=\"links\">\n    <td mat-cell\n        *matCellDef=\"let element\">\n      <span *ngFor=\"let item of element.items\">\n          <a href=\"{{item.link}}\" target=\"_blank\" [style.color]=\"element.color\">{{item.title}}</a>\n        </span>\n    </td>\n  </ng-container>\n\n  <tr mat-row\n      *matRowDef=\"let row; columns:displayedColumns\"></tr>\n</table>\n"
+module.exports = "<table mat-table\n    [dataSource]=\"dataSource\"\n    class=\"mat-elevation-z8\">\n\n  <ng-container matColumnDef=\"category\">\n    <td mat-cell\n        *matCellDef=\"let element\"\n        [style.color]=\"element.color\"\n        class=\"category\"> {{element.category}}</td>\n  </ng-container>\n  <ng-container matColumnDef=\"splitter\">\n    <td mat-cell\n        *matCellDef=\"let element\"\n        [style.color]=\"element.color\">::</td>\n  </ng-container>\n  <ng-container matColumnDef=\"links\">\n    <td mat-cell\n        *matCellDef=\"let element\"\n        class=\"links\">\n      <span *ngFor=\"let item of element.items\">\n          <a href=\"{{item.link}}\" target=\"_blank\" [style.color]=\"element.color\">{{item.title}}</a>\n        </span>\n    </td>\n  </ng-container>\n\n  <tr mat-row\n      *matRowDef=\"let row; columns:displayedColumns\"></tr>\n</table>\n"
 
 /***/ }),
 
@@ -169,7 +169,7 @@ module.exports = "<table mat-table\n    [dataSource]=\"dataSource\"\n    class=\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table {\n  width: 80%;\n  margin-left: 10%;\n  background-color: transparent; }\n  table td {\n    border-bottom: none; }\n  table .category {\n    width: 6em; }\n  table .category::before {\n    content: \"#$\"; }\n  table span {\n    padding: 5px;\n    display: inline-block; }\n"
+module.exports = "table {\n  width: 80%;\n  margin-left: 10%;\n  background-color: transparent; }\n  table td {\n    border-bottom: none; }\n  table .category {\n    min-width: 10em; }\n  table .category::before {\n    content: \"#$\"; }\n  table .links {\n    width: 100%; }\n  table span {\n    padding: 5px;\n    display: inline-block; }\n"
 
 /***/ }),
 
