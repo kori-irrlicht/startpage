@@ -169,7 +169,7 @@ module.exports = "<table mat-table\n    [dataSource]=\"dataSource\"\n    class=\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table {\n  width: 80%;\n  margin-left: 10%; }\n  table .category {\n    width: 6em; }\n  table .category::before {\n    content: \"#$\"; }\n  table span {\n    padding: 5px;\n    display: inline-block; }\n"
+module.exports = "table {\n  width: 80%;\n  margin-left: 10%;\n  background-color: transparent; }\n  table td {\n    border-bottom: none; }\n  table .category {\n    width: 6em; }\n  table .category::before {\n    content: \"#$\"; }\n  table span {\n    padding: 5px;\n    display: inline-block; }\n"
 
 /***/ }),
 
