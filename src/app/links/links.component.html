@@ -15,7 +15,8 @@
   </ng-container>
   <ng-container matColumnDef="links">
     <td mat-cell
-        *matCellDef="let element">
+        *matCellDef="let element"
+        class="links">
       <span *ngFor="let item of element.items">
           <a href="{{item.link}}" target="_blank" [style.color]="element.color">{{item.title}}</a>
         </span>
