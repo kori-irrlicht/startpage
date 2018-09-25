@@ -17,5 +17,10 @@
   <body>
     <app-root></app-root>
   </body>
+  <script type="text/javascript">
+    let src = JSON.parse(localStorage.getItem('startpage'))['background'];
+    window.document.getElementsByTagName('body')[0].style.backgroundImage = src;
+
+  </script>
 
 </html>

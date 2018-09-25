@@ -17,6 +17,7 @@ $app-theme: mat-dark-theme($app-primary, $app-accent, $app-warn); // Include the
 body {
   background-color: mat-color($app-primary);
   color           : mat-color($app-accent, A400);
-  height          : 100vh;
   margin          : 0;
+  padding-top     : 10vh;
+  background-size : 100vw;
 }
